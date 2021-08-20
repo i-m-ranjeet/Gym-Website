@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GYM-Name</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oxanium:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+		<div class="visit-bg"></div>
+	<nav>
+		<div class="logo">LEGION-GYM </div>
+		<ul>
+			<li onclick="openlink('home')" >Home</li>
+			<li onclick="openlink('instructors')">Instructors</li>
+			<li onclick="openlink('classes')" style="background: #15f;color: #fff;">Classes</li>
+			<li onclick="openlink('rules')">Rules	</li>
+			<li onclick="openlink('about')">About Us</li>
+			
+			
+		</ul>
+		<div class="nav-login-btn" onclick="showprofile()">Profile</div>
+		<div class="profile-container">
+			<div class="profile-container-bg"></div>
+			<span onclick="closeprofile()" class="goback">&#10140;</span>
+			<div class="box1 boxes">
+				<div class="dp"></div>
+				<div class="user-name">User Name</div>
+			</div>
+			<div class="box2 boxes">
+				<label>Full Name</label>
+				<input type="text" name="" value="Robert Downey">
+			</div>
+			<div class="box3 boxes">
+				<label>Mobile</label>
+				<input type="number" name="" value="0123456789">
+			</div>
+			<div class="box4 boxes">
+				<label>E-mail</label>
+				<input type="Email" name="" value="robert@down.ey">
+			</div>
+			<div class="box5 boxes">
+				<label>Password</label>
+				<input type="password" name="" value="11111111">
+			</div>
+			<div class="box6 boxes">
+				<label onclick="show_preview()">Aadhar Card <span>Click To Preview</span></label>
+				<div class="aadhar-holder" >
+					<span onclick="close_preview()" class="goback">&#10008;</span>
+					<div class="aadhar"></div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- <img src="../Images/class.png" class="gymclasses"> -->
+	<div class="gymclasses">
+		<div class="classheading">Class Schedule</div>
+		<div class="days day2"> 
+			<h1>Monday</h1>
+			<p class="time">5:30 AM W.O.D.</p>
+			<p class="time">12:00 PM W.O.D.</p>
+			<p class="time">4:00 PM W.O.D.</p>
+			<p class="time">5:15 PM W.O.D.</p>
+			<p class="time">6:30 PM W.O.D.</p>
+
+		 </div>
+		<div class="days day3"> 
+			<h1>Tuesday</h1>
+			<p class="time">5:30 AM W.O.D.</p>
+			<p class="time">12:00 PM W.O.D.</p>
+			<p class="time">4:00 PM W.O.D.</p>
+			<p class="time">5:15 PM W.O.D.</p>
+			<p class="time">6:30 PM W.O.D.</p>
+			<p class="time" style="height: 38px; /*text-align: left;*/ padding-left: 4px;">8:00 PM Fundamentals</p>
+
+		 </div>
+		<div class="days day4"> 
+			<h1>Wednesday</h1>
+			<p class="time">5:30 AM W.O.D.</p>
+			<p class="time">12:00 PM W.O.D.</p>
+			<p class="time">4:00 PM W.O.D.</p>
+			<p class="time">5:15 PM W.O.D.</p>
+			<p class="time">6:30 PM W.O.D.</p>
+
+		 </div>
+		<div class="days day1"> 
+			<h1>Thursday</h1>
+			<p class="time">5:30 AM W.O.D.</p>
+			<p class="time">12:00 PM W.O.D.</p>
+			<p class="time">4:00 PM W.O.D.</p>
+			<p class="time">5:15 PM W.O.D.</p>
+			<p class="time">6:30 PM W.O.D.</p>
+			<p class="time"style="height: 38px; /*text-align: left;*/ padding-left: 4px;">8:00 PM Fundamentals</p>
+
+		 </div>
+		<div class="days day5"> 
+			<h1>Friday</h1>
+			<p class="time">5:30 AM W.O.D.</p>
+			<p class="time">12:00 PM W.O.D.</p>
+			<p class="time">4:00 PM W.O.D.</p>
+			<p class="time">5:15 PM W.O.D.</p>
+			<p class="time">6:30 PM W.O.D.</p>
+
+		 </div>
+		<div class="days day6"> 
+			<h1>Saturday</h1>
+			<p class="time"style="height: 38px; /*text-align: left;*/ padding-left: 4px;">9:00 AM Free Intro Workout</p>
+			<p class="time"style="height: 38px; /*text-align: left;*/ padding-left: 4px;">11:00 Fundamentals</p>
+			<p class="time"style="height: 38px; /*text-align: left;*/ padding-left: 4px;">12:30-3:00 Open Gym</p>
+
+		 </div>
+
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GYM-Name</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oxanium:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+		<div class="bg"></div>
+	<nav>
+		<div class="logo" onclick="ch()">LEGION-GYM </div>
+		<ul>
+			<li onclick="openlink('home')" >Home</li>
+			<li onclick="openlink('instructors')">Instructors</li>
+			<li onclick="openlink('classes')">Classes</li>
+			<li onclick="openlink('rules')">Rules	</li>
+			<li onclick="openlink('about')">About Us</li>
+			
+		</ul>
+		<div class="nav-login-btn" onclick="showprofile()">Profile</div>
+		<div class="profile-container">
+			<span onclick="closeprofile()" class="goback">&#10140;</span>
+			<div class="profile-container-bg"></div>
+			<div class="box1 boxes">
+				<div class="dp"></div>
+				<div class="user-name">User Name</div>
+			</div>
+			<div class="box2 boxes">
+				<label>Full Name</label>
+				<input type="text" name="" value="Robert Downey">
+			</div>
+			<div class="box3 boxes">
+				<label>Mobile</label>
+				<input type="number" name="" value="0123456789">
+			</div>
+			<div class="box4 boxes">
+				<label>E-mail</label>
+				<input type="Email" name="" value="robert@down.ey">
+			</div>
+			<div class="box5 boxes">
+				<label>Password</label>
+				<input type="password" name="" value="11111111">
+			</div>
+			<div class="box6 boxes">
+				<label onclick="show_preview()">Aadhar Card <span>Click To Preview</span></label>
+				<div class="aadhar-holder" >
+					<span onclick="close_preview()" class="goback">&#10008;</span>
+					<div class="aadhar"></div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="main">
+		<div class="lg-rg">
+			<div class="lg" onclick="displayLogin()">Login</div>
+			<div class="rg" onclick="displayReg()">Register</div>
+		</div>
+		<div class="motive-text"><p>The Pain You Feel Today Is The Strength You Feel Tomorrow</p></div>
+	</div>
+		<div class="acc-form">
+			<div class="bg"></div>
+			<div class="form">
+				<span class="close-form" onclick="closeForm()">x</span>
+				<div class="ch-form">
+					<span class="ch1" onclick="displayLogin()">Login</span>
+					<span class="ch2" onclick="displayReg()">register</span> 
+				</div>
+				<form method="POST">
+					<div class="lg-form">
+						<label>usrname</label>
+						<input type="text" name="username">
+						<label>password</label>
+						<input type="password" name="">
+						<button name="Submit">Login</button>
+						<div class="links">
+							<a href="">Forget Username</a>
+							<a href="">Forget Password</a>
+						</div>
+					</div>
+				</form>
+				<?php 
+					if(isset($_POST['Submit'])){
+						$username = $_POST['username'];
+						$password = $_POST['password'];
+					}
+				?>
+				<form method="POST">
+					<div class="rg-form">
+						<label>Full Name</label>
+						<input type="text" name="">
+						<label>Mobile</label>
+						<input type="number" name="">
+						<label>E-mail</label>
+						<input type="Email" name="">
+						<label>New Password</label>
+						<input type="text" name="">
+						<label class="upload-label">Upload  AAdhar Card</label>
+						<div class="upload-file">
+							<div class="uploadplace" onclick="upload()">Choose File</div>
+							<input type="file" name="" class="upload-button">
+						</div>
+						<button>Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

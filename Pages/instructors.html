@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GYM-Name</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oxanium:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+<body>
+		<div class="instructors-bg"></div>
+	<nav style="background: rgba(0,0,0,.8);">
+		<div class="logo">LEGION-GYM </div>
+		<ul>
+			<li onclick="openlink('home')" >Home</li>
+			<li onclick="openlink('instructors')" style="background: #15f;color: #fff;">Instructors</li>
+			<li onclick="openlink('classes')">Classes</li>
+			<li onclick="openlink('rules')">Rules	</li>
+			<li onclick="openlink('about')">About Us</li>
+			
+			
+		</ul>
+		<div class="nav-login-btn" onclick="showprofile()">Profile</div>
+		<div class="profile-container">
+			<div class="profile-container-bg"></div>
+			<span onclick="closeprofile()" class="goback">&#10140;</span>
+			<div class="box1 boxes">
+				<div class="dp"></div>
+				<div class="user-name">User Name</div>
+			</div>
+			<div class="box2 boxes">
+				<label>Full Name</label>
+				<input type="text" name="" value="Robert Downey">
+			</div>
+			<div class="box3 boxes">
+				<label>Mobile</label>
+				<input type="number" name="" value="0123456789">
+			</div>
+			<div class="box4 boxes">
+				<label>E-mail</label>
+				<input type="Email" name="" value="robert@down.ey">
+			</div>
+			<div class="box5 boxes">
+				<label>Password</label>
+				<input type="password" name="" value="11111111">
+			</div>
+			<div class="box6 boxes">
+				<label onclick="show_preview()">Aadhar Card <span>Click To Preview</span></label>
+				<div class="aadhar-holder" >
+					<span onclick="close_preview()" class="goback">&#10008;</span>
+					<div class="aadhar"></div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="instructors">
+		<span class="instruct-heading">Our Instructors</span>
+		<div class="box box1">
+			<div class="content">
+				<div>
+					<i class="fab fa-whatsapp" ></i>
+					<i class="fab fa-facebook-f" ></i>
+					<i class="fab fa-instagram" ></i>
+					<i class="fab fa-twitter" ></i>
+				</div>
+				<span class="name">Jason</span>
+				<p>	One of Beatbike's homegrown
+					instructors, Jason is a massage therapist by day and a rhythm driven vixen on the bike. Jason thrives riding as a team, encouraging you with his motto.
+
+				</p>
+			</div>
+		</div>
+		<div class="box box2">
+			<div class="content">
+				<div>
+					<i class="fab fa-whatsapp" ></i>
+					<i class="fab fa-facebook-f" ></i>
+					<i class="fab fa-instagram" ></i>
+					<i class="fab fa-twitter" ></i>
+				</div>
+				<span class="name">Dana</span>
+				<p>	Dana's musicality is her
+					expertise, she thrives on finding the right music to bring the energy in the room to make you work! Her motto is simple.
+				</p>
+			</div>
+		</div>	
+		<div class="box box3">
+			<!-- <img src="../fitness model-3.jpg"/> -->
+			<div class="content">
+				<div>
+					<i class="fab fa-whatsapp" ></i>
+					<i class="fab fa-facebook-f" ></i>
+					<i class="fab fa-instagram" ></i>
+					<i class="fab fa-twitter" ></i>
+				</div>
+				<span class="name">Fabian</span>
+				<p>	Fabian's musical choices can 
+					best be described as a mix of Hip Hop and Twerk Music! He brings a party to the bike with his favorite move, the tap back to push up. In his class you'll be inspired by his motto.
+
+				</p>
+			</div>
+		</div>	
+		<div class="box box4">
+			<!-- <img src="../fitness model-4.jpg"/> -->
+			<div class="content">
+				<div>
+					<i class="fab fa-whatsapp" ></i>
+					<i class="fab fa-facebook-f" ></i>
+					<i class="fab fa-instagram" ></i>
+					<i class="fab fa-twitter" ></i>
+				</div>
+				<span class="name">Julia</span>
+				<p>	With Julia, her ride is about 
+					connection. Making riders feel a part of the community!! By recognizing their goals and who they are outside of the studio, things are more personal on and off the bike.
+				</p>
+			</div>
+		</div>			
+	</div>
+
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="../script.js"></script>
+</body>
+</html>
